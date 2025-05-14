@@ -1,0 +1,17 @@
+[project]
+name = "datasim"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "boto3>=1.38.16",
+    "duckdb>=1.2.2",
+    "faker>=37.3.0",
+    "gcsfs>=2025.3.2",
+    "numpy>=2.2.5",
+    "pandas>=2.2.3",
+    "polars>=1.29.0",
+    "pydantic>=2.11.4",
+    "sqlalchemy>=2.0.41",
+]
