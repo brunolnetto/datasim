@@ -17,22 +17,20 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from threading import Lock
 from collections import defaultdict
 import datetime
+from dateutil.relativedelta import relativedelta
+import math
 
-import fastavro
 from pydantic import BaseModel, Field, model_validator, field_validator
 from pydantic.functional_validators import AfterValidator
 import polars as pl
 import pandas as pd
-import pyarrow as pa
-import pyarrow.orc as orc
 import numpy as np
 import duckdb
 from boto3 import client as boto_client
 from gcsfs import GCSFileSystem
 from sqlalchemy import create_engine, text
 from faker import Faker
-from dateutil.relativedelta import relativedelta
-import math
+
 
 logger = logging.getLogger("retail_gen")
 logger.setLevel(logging.INFO)
